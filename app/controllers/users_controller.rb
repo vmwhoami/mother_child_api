@@ -1,12 +1,18 @@
 class UsersController < ApplicationController
   def create
     user = User.new(permitted_params)
+    byebug
+    if(user.save)
+      :ok
+    else
+      :bad_request
+    end
   end
 
-  
+
   private
   def permitted_params
-    params.require(:user).permit(:fullname, :email, :gender, :password)
+    params.permit(:fullname, :email, :gender, :password)
   end
 
 end
