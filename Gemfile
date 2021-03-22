@@ -40,6 +40,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'faker', '~> 2.17'
 gem 'jwt'
 gem 'rack-cors'
 gem 'rubocop', '~>0.81.0'
