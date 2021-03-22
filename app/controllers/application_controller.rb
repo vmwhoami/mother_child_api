@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::API
-  protect_from_forgery except: :create
+  # protect_from_forgery except: :create
 end
