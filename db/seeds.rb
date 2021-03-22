@@ -40,7 +40,6 @@ puts "Users created"
    name:Faker::Name.unique.name,
    title: types[el],
    gender:genders.sample(),
- 
   )
   end
 
