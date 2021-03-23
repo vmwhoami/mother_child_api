@@ -13,11 +13,11 @@ RSpec.describe Appointment, type: :model do
     end
 
     it 'Validates presence of user' do
-      a = Appointment.new( doctor: @doctor,date_time: Time.now)
+      a = Appointment.new(doctor: @doctor, date_time: Time.now)
       expect(a.valid?).to eq(false)
     end
     it 'Validates presence of doctor' do
-      a = Appointment.new( user: @user,date_time: Time.now)
+      a = Appointment.new(user: @user, date_time: Time.now)
       expect(a.valid?).to eq(false)
     end
   end

@@ -1,22 +1,23 @@
 class Api::V1::UsersController < ApplicationController
-   def index
+  def index
     @users = User.all
     render json: @users
   end
-  
-  
+
   def create
-    user = User.new(permitted_params)
-    if user.save
-      :ok
+    user = User.create(permitted_params)
+    if user.valid?
+      payload = {user_id: user.id}
+      token = encode_token(payload)
+      render json: {user: user, jwt: token}
     else
-      :bad_request
+      render json: {errors: user.errors.full_messages}, status: :not_acceptable
     end
   end
 
   private
 
   def permitted_params
-    params.permit(:fullname, :email, :gender, :password,:age)
+    params.permit(:fullname, :email, :gender, :password, :age)
   end
 end
