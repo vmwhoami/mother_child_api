@@ -1,5 +1,5 @@
 class Api::V1::AppointmetsController < ApplicationController
-  # before_action :authorized
+  before_action :authorized
 
   def index
     appointments = Appointment.where(user_id: params[:user_id])
