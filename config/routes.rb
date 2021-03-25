@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       get "/auto_login", to: "auth#auto_login"
       get "/user_is_authed", to: "auth#user_is_authed"
 
-
+      get "/doctors", to: "doctors#index"
       get "/appointmets", to: "appointmets#index"
       post "/appointmets", to: "appointmets#create"
       delete "/appointmets", to: "appointmets#delete" 
