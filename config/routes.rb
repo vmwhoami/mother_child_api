@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
       get "/doctors", to: "doctors#index"
       get "/allapp", to: "appointmets#allapp"
-      get "/appointmets", to: "appointmets#index"
+      post "/myappointmets", to: "appointmets#index"
       post "/appointmets", to: "appointmets#create"
       delete "/appointmets", to: "appointmets#delete" 
     end
