@@ -15,8 +15,8 @@ pictures = [
 "https://w7.pngwing.com/pngs/98/590/png-transparent-physician-doctor-of-medicine-patient-health-care-doctor-electronics-microphone-service.png",
 "https://w7.pngwing.com/pngs/904/102/png-transparent-medicine-physician-riverside-medical-center-dentist-health-care-others-service-dentistry-clipboard.png"
 
-
 ]
+tex = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de 'Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32."
 
 genders = ["male","female"]
 types = [
@@ -38,20 +38,28 @@ User.create(
  fullname: Faker::Name.name,
  gender:genders.sample(),
  password: "password",
- age: el.abs()%5
+ age: el.abs()%5,
+ 
 )
 end
 
 puts "***" * 50 
 puts "Users created"
 
+def rand(tex)
+  len = tex.split(" ").length/2
+  tex.split(" ").first(Random.rand(10...len)).join(" ")
+end
  
 (types.length).times do |el|
   Doctor.create(
    name:Faker::Name.unique.name,
    title: types[el],
-   gender:genders.sample(),
-   img: pictures[el]
+   img: pictures[el],
+   room: el+1,
+   recieving_hours: "#{8+el}",
+   info: rand(tex)
+
   )
   end
 
@@ -62,7 +70,6 @@ puts "Doctors  created"
   Appointment.create(
  user: User.find((1...types.length).to_a.sample()),
  doctor: Doctor.find((1...types.length).to_a.sample()),
- room:  (10...200).to_a.sample().to_s,
  date_time: Faker::Date.between_except(from: Time.now, to: 1.year.from_now, excepted: Date.today)
   )
 
