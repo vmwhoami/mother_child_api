@@ -7,7 +7,7 @@ class Api::V1::AppointmetsController < ApplicationController
   end
 
   def index
-    appointments = Appointment.where(user_id: params[:user_id])
+    appointments = Appointment.where(user_id: params[:user])
     render json: appointments
   end
 
