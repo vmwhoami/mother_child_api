@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get "/user_is_authed", to: "auth#user_is_authed"
 
       get "/doctors", to: "doctors#index"
+      get "/allapp", to: "appointmets#allapp"
       get "/appointmets", to: "appointmets#index"
       post "/appointmets", to: "appointmets#create"
       delete "/appointmets", to: "appointmets#delete" 

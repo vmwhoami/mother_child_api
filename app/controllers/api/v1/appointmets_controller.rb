@@ -1,13 +1,18 @@
 class Api::V1::AppointmetsController < ApplicationController
   before_action :authorized
 
+  def allapp
+    appointments = Appointment.all
+    render json: appointments
+  end
+
   def index
     appointments = Appointment.where(user_id: params[:user_id])
     render json: appointments
   end
 
   def create
-    appointment = Appointment.create(user_id: params[:user_id], doctor_id: params[:doctor_id], date_time: params[:time],room: params[:room])
+    appointment = Appointment.create(user_id: params[:user], doctor_id: params[:doctor], date_time: params[:time] )
     if appointment.valid?
     render json: appointment
     else
@@ -24,8 +29,4 @@ class Api::V1::AppointmetsController < ApplicationController
       render json: { errors: "Something went wrong" }, status: :not_acceptable
     end
   end
-  # private
-  # def permitted_params
-  #   params.permit(:user_id, :doctor_id,:time)
-  # end
 end

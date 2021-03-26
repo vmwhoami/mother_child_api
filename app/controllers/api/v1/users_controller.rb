@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :authorized, only: [:index]
+  # before_action :authorized, only: [:index]
 
   def index
     @users = User.all
