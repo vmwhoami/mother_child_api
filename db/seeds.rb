@@ -1,9 +1,9 @@
 require 'faker'
 
 pictures = [
-"https://www.pngitem.com/pimgs/m/455-4554771_doctor-png-female-doctor-transparent-background-png-download.png",
+"https://pngimg.com/uploads/doctor/doctor_PNG16012.png",
 "https://xn--80apfedmab8e4d.xn--p1ai/wp-content/uploads/2017/08/doctor-writing.png",
-"https://w7.pngwing.com/pngs/753/484/png-transparent-physician-doctor-of-medicine-clinic-pharmacy-others-miscellaneous-service-nutrition.png",
+"https://pngimg.com/uploads/doctor/doctor_PNG16011.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG15980.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16040.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16041.png",
