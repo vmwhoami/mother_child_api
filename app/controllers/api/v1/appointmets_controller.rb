@@ -12,9 +12,9 @@ class Api::V1::AppointmetsController < ApplicationController
   end
 
   def create
-    appointment = Appointment.create(user_id: params[:user], doctor_id: params[:doctor], date_time: params[:time] )
+    appointment = Appointment.create(user_id: params[:user], doctor_id: params[:doctor], date_time: params[:time])
     if appointment.valid?
-    render json: appointment
+      render json: appointment
     else
       render json: { errors: appointment.errors.full_messages }, status: :not_acceptable
     end
@@ -24,9 +24,9 @@ class Api::V1::AppointmetsController < ApplicationController
     appointment = Appointment.find_by(id: params[:id])
     if appointment
       appointment.destroy
-      render json: {success: "Deleted"}
+      render json: { success: 'Deleted' }
     else
-      render json: { errors: "Something went wrong" }, status: :not_acceptable
+      render json: { errors: 'Something went wrong' }, status: :not_acceptable
     end
   end
 end
