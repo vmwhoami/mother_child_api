@@ -1,19 +1,19 @@
 require 'faker'
 
 pictures = [
-"https://w7.pngwing.com/pngs/58/565/png-transparent-physician-medicine-medical-diagnosis-health-care-online-doctor-doctor-service-people-medical-diagnosis.png",
-"https://xn--80apfedmab8e4d.xn--p1ai/wp-content/uploads/2017/08/doctor-writing.png",
-"https://w7.pngwing.com/pngs/753/484/png-transparent-physician-doctor-of-medicine-clinic-pharmacy-others-miscellaneous-service-nutrition.png",
-"https://w7.pngwing.com/pngs/497/547/png-transparent-lewermark-international-student-health-insurance-physician-otorhinolaryngology-doctor-service-medical-desktop-wallpaper.png",
-"https://yt3.ggpht.com/a/AATXAJwrdK-HMWZe3KdP8T5-hiLVKAzcPbwSbxRt_cuQ=s900-c-k-c0xffffffff-no-rj-mo",
-"https://w7.pngwing.com/pngs/25/402/png-transparent-male-doctor-hospital-medical-real-doctors.png",
-"https://w7.pngwing.com/pngs/740/389/png-transparent-physician-dentist-clinic-doctor-of-medicine-others-service-medical-medicine.png",
-"https://w7.pngwing.com/pngs/74/366/png-transparent-women-s-blue-coat-nursing-college-licensed-practical-nurse-registered-nurse-job-doctor-miscellaneous-blue-service.png",
-"https://w7.pngwing.com/pngs/739/813/png-transparent-woman-wearing-white-lab-coat-sildenafil-medicine-health-care-pharmaceutical-drug-physician-pharmacist-hospital-pharmacy-service-pharmaceutical-drug-medicine.png",
-"https://w7.pngwing.com/pngs/713/266/png-transparent-physician-medicine-health-care-nursing-care-others-service-medical-woman.png",
-"https://w7.pngwing.com/pngs/221/542/png-transparent-medicine-physician-assistant-stethoscope-nurse-practitioner-woman-medicine-physician-assistant-stethoscope.png",
-"https://w7.pngwing.com/pngs/98/590/png-transparent-physician-doctor-of-medicine-patient-health-care-doctor-electronics-microphone-service.png",
-"https://w7.pngwing.com/pngs/904/102/png-transparent-medicine-physician-riverside-medical-center-dentist-health-care-others-service-dentistry-clipboard.png"
+ "https://lh3.googleusercontent.com/pw/ACtC-3dcIUJsqqTAVFIAoAoYFGkvkPyt30b850nrRhAyETL4wGnbliksaaV9rzKF0EH3TwguWbFoEAD7WO0DVUARZGrhCpHhOH63yKKksT0wnGGeHTuM0dG0iYJ059layX8hlk1cNeORLOCNcsAX1aCqcx8r=w528-h768-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3clmeM7Tjctec_PVehcQuqPcocn3CPGLn-m6NKiZqXTIoJMTtYUj3k3qhw_JntXNbXBR08Z5BSQ5RmkZkgL6jkKtaaq6KUJmzAfyiUKPDPxFSUx5GiEgNMPu-q8sLKFMhKjWxoLYr_8i6NmTh8E-eNs=w542-h634-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3fgmZgFhtmidh_679R5RaS4ZpXRc-R91ImTET6gOqrwBrPVaXkAuCe--LlFvgbAVctnDZ-z3fznC-dz0XM46F1AcQ-sB6X-TPrgNu15p_Jpwk9chQspYm46pYO3kVDs9m63gbukl0vReNkW2crYGXn9=w542-h634-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3eN8o3v6k8FutD5O-tYsXYobq0-7gVOqBfMROKx5Hz6q7DkbghClDj5lCff3_0m3al9lh-KI46KOJOdlt8epr3B16cUcOZzxjmj1kzsSV0YCzHJAELhu1sbqcQcX4ymgBpsUSP_x_SyeqOmbpWhMEg4=w542-h634-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3ew6lFcD-P_7Lrjl9ydSP2bo4Bfg1R6rTAGJ2zBV3XFL9S_Vj9a4FEKU3seCiEJQ1AjHpmKVvBO_bjtrW3NHWBFbfJNbVeIl_3n_jG1RFXbKDCtY3NRKxqWu-qxznskfT4KnKoPROCf2MSS4WEIMjI-=w542-h660-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3ekf77HsRS56UNB0G9MBQlF5r0sy1l-RSHo2Qmpnksr0MgF4LyEZEe6LS0nMc1F6_Apk8qKCoVVUx_QLIAGDEyWgkUpglBkNPeljXSeIPq8hXSTu7Q6yPfxS9wEMeWH-RXYJfQUazLMV1CGvba9Fhm5=w542-h694-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3eKBfyPBxMaVG23pWu7zpropnIbIqbt738Z6lKhjCuP2nGDbUVcYWWMytYKjfdC6LwjnQ13tR0DDvL5zADgtpdX_TlI4eWxR9yzRCe_3Nm9F7spBFhxbgoBug4pOyYqUcbohaz6CTuRNLFFyczpTY47=w662-h694-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3cD2YVAHlytGcSfkREpMoB06ZgT38jLkARYEAP61wHBPdOl4On4XxAzC4bD1ecJU1EtCaoAT8qmHgn3aHAu4PfusvFTIYsAtdAbGdKCbIXs-yynlSu0YuaHu0IxW3Y7o7BvJz3VMDLHdry9hgKJ4Bnd=w528-h694-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3cjlpqsG9kmEJplZHTgmAyGr0O4eP_VGCj1PasfFupaOz062fi9WJ84sMKBttvPz6Lwxybnc4TkKZ4S7dmIVLk3sQpOXZ19RzODeJS5bKtytiFOZpIC0pecrlSlwnfZdKL6yYIxttZPw1s5-0NRjY1m=w528-h694-no?authuser=0",
+ "https://lh3.googleusercontent.com/pw/ACtC-3ebBXqL7ZFE3_LCBgnhlcNTl2HftuPsxblVHPX-oy2sBpVBLD0sm7LaBqXI-2LvkphyUZI2Fs6YPB-kgq2w8S6KCj0Th1Oabnd9dWJP9qjhlXV1A24ICVgv81fir9-Xxdv_gf0TmHqzGYGaFhyekuYn=w528-h694-no?authuser=0"
+
+
+
 
 ]
 tex = "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de 'Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32."
