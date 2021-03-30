@@ -2,7 +2,9 @@
 
 A RESTFUL API built with Ruby on Rails. It uses JWT to implement Authentication & Authorization. In this project, I built a full-stack application where users can access the list of doctors and their detailed information as well as their appointments made with a specific Doctor. The project serves as my final capstone project at Microverse. The repo for the client app can be accessed [here](https://github.com/vmwhoami/mother_child_api)
 
-![screenshot](./)
+## Routes
+
+![screenshot](./routes.jpg)
 
 ## Built With
 
