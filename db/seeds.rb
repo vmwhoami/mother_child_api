@@ -10,7 +10,7 @@ pictures = [
 "https://pngimg.com/uploads/doctor/doctor_PNG16042.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16034.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16037.png",
-"https://pngimg.com/uploads/doctor/doctor_PNG16038.png",
+"http://pngimg.com/uploads/doctor/doctor_PNG15985.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16030.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16031.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16022.png",

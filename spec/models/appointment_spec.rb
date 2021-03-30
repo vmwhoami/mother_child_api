@@ -4,7 +4,7 @@ RSpec.describe Appointment, type: :model do
   context 'Appointment validations' do
     before(:each) do
       @user = User.create(fullname: 'John Doe', gender: 'male', email: 'johndoe@mail.com', password: 'password', age: 2)
-      @doctor = Doctor.create(name: 'John Doe', gender: 'male', title: 'testing')
+      @doctor = Doctor.create(name: 'John Doe' , title: 'testing',info: "Some info",room: 202,recieving_hours:"12-15")
     end
 
     it 'Validates presence of date_time' do
