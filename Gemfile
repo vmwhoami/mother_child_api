@@ -14,7 +14,7 @@ gem 'puma', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -27,20 +27,22 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
-  gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  
+  gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 group :development do
-  gem 'pry-rails', '~> 0.3.9'
   gem 'listen', '~> 3.3'
+  gem 'pry-rails', '~> 0.3.9'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'faker', '~> 2.17'
+gem 'jwt'
 gem 'rack-cors'
 gem 'rubocop', '~>0.81.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
