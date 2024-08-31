@@ -64,6 +64,10 @@ Open `http://localhost:3000/` in your browser.
     rpsec
 ```
 
+### Docker 
+
+The app is dockerized and can be in a container
+
 # Authors
 
 👤 **Vitalie Melnic**
