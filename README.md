@@ -1,4 +1,4 @@
-# Mother and Child Hospital JSON API WITH RAILS 6
+# Mother and Child Hospital JSON API WITH RAILS 7
 
 A RESTFUL API built with Ruby on Rails. It uses JWT to implement Authentication & Authorization. In this project, I built a full-stack application where users can access the list of doctors and their detailed information as well as their appointments made with a specific Doctor. The project serves as my final capstone project at Microverse. The repo for the client app can be accessed [here](https://github.com/vmwhoami/mother_child_api)
 
@@ -8,8 +8,8 @@ A RESTFUL API built with Ruby on Rails. It uses JWT to implement Authentication 
 
 ## Built With
 
-- Ruby v2.7.2
-- Ruby on Rails v6.1.3
+- Ruby 3.2.2
+- Ruby on Rails 7.2.1
 - RSpec
 
 ## Live Demo
@@ -22,8 +22,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Ruby: 2.7.1
-Rails: 6.0.3.4
+Ruby: 3.2.2
+Rails: 7.2.1
 Postgres: >=9.5
 
 ### Setup
@@ -63,6 +63,10 @@ Open `http://localhost:3000/` in your browser.
 ```
     rpsec
 ```
+
+### Docker 
+
+The app is dockerized and can be in a container
 
 # Authors
 
