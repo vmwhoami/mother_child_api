@@ -7,7 +7,8 @@ RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 WORKDIR /mother_child_api
 
 # Install Rails
-RUN gem install rails -v 6.1.7.3
+
+RUN gem install rails -v 7.2.1
 
 # Copy Gemfile and Gemfile.lock
 COPY Gemfile Gemfile.lock ./
