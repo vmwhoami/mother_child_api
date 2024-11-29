@@ -3,14 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.2.2'
 
-gem 'rails', '~> 7.2.1'
-gem 'pg', '~> 1.5' 
-gem 'puma', '~> 6.4' 
-gem 'bcrypt', '~> 3.1' 
-gem 'rack-cors'
-gem 'bootsnap', require: false
 gem 'base64', '~> 0.2.0'
-gem 'jwt', '~> 2.8' 
+gem 'bcrypt', '~> 3.1'
+gem 'bootsnap', require: false
+gem 'jwt', '~> 2.8'
+gem 'pg', '~> 1.5'
+gem 'puma', '~> 6.4'
+gem 'rack-cors'
+gem 'rails', '~> 7.2.1'
 gem 'rubocop', '~> 1.50'
 
 group :development, :test do
@@ -24,4 +24,4 @@ group :development do
   gem 'pry-rails', '~> 0.3.9'
 end
 
-gem 'faker', '~> 3.4' 
+gem 'faker', '~> 3.4'

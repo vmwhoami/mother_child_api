@@ -33,6 +33,10 @@ $ git clone https://github.com/vmwhoami/mother_child_api
 $ cd danceter
 ```
 
+### Change permissions in container evironment
+```bash
+sudo chmod 755 tmp/db
+```
 Install gems with:
 
 ```
@@ -56,7 +60,7 @@ Start server with:
     rails server
 ```
 
-Open `http://localhost:3000/` in your browser.
+Open `http://localhost:3003/` in your browser.
 
 ### Run tests
 

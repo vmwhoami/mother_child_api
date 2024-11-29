@@ -11,7 +11,7 @@ class Api::V1::UsersController < ApplicationController
     if user.valid?
       payload = { user_id: user.id }
       token = encode_token(payload)
-      render json: { user: user, jwt: token }
+      render json: { user:, jwt: token }
     else
       render json: { errors: user.errors.full_messages }, status: :not_acceptable
     end
