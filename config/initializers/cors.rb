@@ -5,9 +5,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors, debug: true, logger: (-> { Rails.logger }) do
   allow do
-    origins '*'
+    origins 'http://localhost:5173'
 
-    resource '/cors',
+    resource 'http://localhost:5173',
       :headers => :any,
       :methods => [:post],
       :max_age => 0

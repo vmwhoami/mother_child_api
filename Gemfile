@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.2.2'
+ruby '3.4.1'
 
 gem 'base64', '~> 0.2.0'
 gem 'bcrypt', '~> 3.1'
 gem 'bootsnap', require: false
 gem 'jwt', '~> 2.8'
 gem 'pg', '~> 1.5'
+gem 'pry-remote', '~> 0.1.8'
 gem 'puma', '~> 6.4'
 gem 'rack-cors'
 gem 'rails', '~> 7.2.1'
 gem 'rubocop', '~> 1.50'
-
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'

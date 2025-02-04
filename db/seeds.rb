@@ -2,7 +2,6 @@ require 'faker'
 
 pictures = [
 "https://pngimg.com/uploads/doctor/doctor_PNG16012.png",
-"https://xn--80apfedmab8e4d.xn--p1ai/wp-content/uploads/2017/08/doctor-writing.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16011.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG15980.png",
 "https://pngimg.com/uploads/doctor/doctor_PNG16040.png",
